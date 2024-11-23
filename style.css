@@ -8,7 +8,112 @@ body {
     color: #333;
     background-color: #f9f9f9;
 }
-/* Introduction Section */
+
+/* Background Section */
+.background {
+    height: 30vh;
+    background-image: url("asset/photo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    width: 100%;
+}
+
+.background a {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    text-decoration: none;
+    color: #fff; /* Fixed missing semicolon */
+    font-weight: bold;
+}
+
+.background a:hover {
+    color: #0288d1;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 60px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Main Sections */
+main section {
+    height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+main section h2 {
+    margin: 20px 0;
+    color: #333;
+    font-size: x-large;
+}
+
+main section p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 main .introduction {
     background-image: url("asset/photo1.avif");
     background-size: cover;
@@ -31,98 +136,15 @@ main .introduction {
     display: block;
 }
 
-/* Background Section */
-.background {
-    height: 30vh;
-    background-image: url("asset/photo2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Header and Navigation */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #00bcd4;
-}
-
-/* Main Sections */
-main section {
-    height: 100vh;
-    justify-content: center;
-    padding: 40px 20px;
+#about h1 {
     text-align: center;
-    background-color: #fff;
-    margin: 10px 0;
+    margin-bottom: 40px;
 }
 
-main section:nth-child(odd) {
-    background-image: #f4f4f4;
-}
-
-main section h1, main section h2 {
-    margin: 20px 0;
-    color: #333;
-}
-
-main section p {
-    margin: 10px 0;
-    font-size: 18px;
-}
-main .introduction{
-    background-image: url("asset/photo1.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-}
-
-/* About Section */
 #about {
     text-align: left;
     max-width: 800px;
     margin: auto;
-}
-#about img{
 }
 
 /* Experience Section */
@@ -135,12 +157,17 @@ main .introduction{
     height: 50px;
     margin: 10px;
 }
-.background{
-    height: 30vh;
-    background-image: url("asset/photo2.jpg");
-}
 
 /* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center; /* Horizontal centering */
+    height: 100vh; /* Full page height */
+    background-color: #f9f9f9; /* Optional for visual clarity */
+}
+
 #contact a {
     display: inline-block;
     padding: 10px 20px;
@@ -171,4 +198,3 @@ footer a {
     text-decoration: none;
     transition: color 0.3s;
 }
-
