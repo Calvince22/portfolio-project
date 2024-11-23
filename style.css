@@ -8,6 +8,42 @@ body {
     color: #333;
     background-color: #f9f9f9;
 }
+/* Introduction Section */
+main .introduction {
+    background-image: url("asset/photo1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+/* About Section */
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Background Section */
+.background {
+    height: 30vh;
+    background-image: url("asset/photo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Header and Navigation */
 header {
@@ -51,6 +87,8 @@ header nav ul li a:hover {
 
 /* Main Sections */
 main section {
+    height: 100vh;
+    justify-content: center;
     padding: 40px 20px;
     text-align: center;
     background-color: #fff;
@@ -58,7 +96,7 @@ main section {
 }
 
 main section:nth-child(odd) {
-    background-color: #f4f4f4;
+    background-image: #f4f4f4;
 }
 
 main section h1, main section h2 {
@@ -70,12 +108,21 @@ main section p {
     margin: 10px 0;
     font-size: 18px;
 }
+main .introduction{
+    background-image: url("asset/photo1.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+}
 
 /* About Section */
 #about {
     text-align: left;
     max-width: 800px;
     margin: auto;
+}
+#about img{
 }
 
 /* Experience Section */
@@ -87,6 +134,10 @@ main section p {
     width: 50px;
     height: 50px;
     margin: 10px;
+}
+.background{
+    height: 30vh;
+    background-image: url("asset/photo2.jpg");
 }
 
 /* Contact Section */
