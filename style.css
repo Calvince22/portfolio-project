@@ -33,7 +33,7 @@ body {
 }
 
 .background a:hover {
-    color: #0288d1;
+    background-color: #0288d1;
 }
 
 /* Header and Navigation */
@@ -135,6 +135,9 @@ main .introduction {
     margin: 20px auto;
     display: block;
 }
+#about a{
+    text-decoration: none;
+}
 
 #about h1 {
     text-align: center;
@@ -193,8 +196,14 @@ footer {
 
 footer a {
     color: #00bcd4;
-    margin: 0 10px;
+    margin-right: 10px;
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s;
+    background-color: #333;
+    padding: 10px;
+}
+footer a:hover{
+    transform: translateX(10px); 
+    color: #0288d1; 
 }
